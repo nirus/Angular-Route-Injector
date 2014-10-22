@@ -16,13 +16,19 @@ I will be glad to get the suggesstion or improvements on this framework.
 
 For more info on this projec
 
-## Final thanks
+## Thanks to
   
 > Dan Wahlin
 
 https://github.com/DanWahlin
 
-on which this library is based.
+http://weblogs.asp.net/dwahlin/dynamically-loading-controllers-and-views-with-angularjs-and-requirejs
+
+The above blog inspired me to develop the library as a genric module with or without Require JS
+
+> Please checkout his Github on custom manager
+
+https://github.com/DanWahlin/CustomerManager
 
 
 
