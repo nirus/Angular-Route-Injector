@@ -33,8 +33,8 @@ This is a AMD approach to inject controller on demand on the fly.
 
 
   ```
-   window.angular.$ControlInjector("loginController",function($scope){         
-        	$scope.resolve = setVar;
+   window.angular.$ControlInjector("loginController",function($scope, setVar){         
+        	$scope.resolve = setVar; //Resolved variable
           console.log("Login Controller Loaded");          
   });
   ```
