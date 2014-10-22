@@ -12,9 +12,14 @@ This is a AMD approach to inject controller on demand
 
 ## Documentation and Support:
 
-I will be glad to get the suggesstion or improvements on this framework.
+I am glad to get the suggesstion or improvements on this framework. I welcome developers to add functionality, 
+make this as a rich plugin with plethora of features.
 
-For more info on this projec
+Raise a question on stackoverflow and mail me the link or raise a issue on github.
+
+For detailed documentation on this project
+
+> Visit:
 
 ## Thanks to
   
@@ -24,7 +29,7 @@ https://github.com/DanWahlin
 
 http://weblogs.asp.net/dwahlin/dynamically-loading-controllers-and-views-with-angularjs-and-requirejs
 
-The above blog inspired me to develop the library as a genric module with or without Require JS
+The above blog inspired me to develop the library as a generic module which can be used with or without Require JS framework.
 
 > Please checkout his Github on custom manager
 
