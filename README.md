@@ -47,7 +47,9 @@ This is a AMD approach to inject controller on demand on the fly.
 
 `route.resolve("YOUR_MODODULE_NAME")` : This will load the module asynchronously on demand
 
-*Note: YOUR_MODODULE_NAME should match HTML file name and your controller javascript file name*
+**Note:** 
+
+> YOUR_MODODULE_NAME should match HTML file name and your controller javascript file name*
 
 `route.resolve("YOUR_MODODULE_NAME",{resolve:  {key : value}})`: pass the key <=> value that has to be resolved before the controller is loaded. This will be injected into controller on demand *refer login.js*. Value can be function , value or a promise object.
 
