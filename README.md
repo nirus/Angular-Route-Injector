@@ -51,7 +51,7 @@ This is a AMD approach to inject controller on demand on the fly.
 
 **Note:** 
 
-Your Controller name will be automatically be genrated by plugin my concatenating YOUR_MOUDULE_NAME + "Controller" string. 
+> Your Controller name will be automatically be genrated by plugin my concatenating YOUR_MOUDULE_NAME + "Controller" string. 
 
 ```
 Example: 
@@ -63,12 +63,11 @@ Example:
 
 ## Support:
 
-I am glad to get the suggesstion or improvements on this plugin. I welcome developers to add functionality, 
-make this as a rich plugin with plethora of features.
+I welcome suggesstion or improvements on this plugin. I encourage developers, code enthusiastist's to add functionalities or make this as a rich plugin with plethora of features by contributing the code.
 
 Raise a question on stackoverflow and mail me the link or raise a issue on github.
 
-Visit: http://Www.nirus.org
+Visit: http://www.nirus.org
 
 
 ## Special Thanks
