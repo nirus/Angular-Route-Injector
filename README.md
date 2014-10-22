@@ -10,6 +10,8 @@ memory foot prints caused due the prefetched Angular controller modules.
 
 This is a AMD approach to inject controller on demand on the fly.
 
+> This plugin can be used with Require JS or just with a plain Angular JS project
+
 ## Documentation:
 
 **With RequireJS framework** - Sync the repo
