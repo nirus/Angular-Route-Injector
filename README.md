@@ -55,19 +55,19 @@ This is a AMD approach to inject controller on demand on the fly.
 
 **Note:** 
 
-> Your Controller name will be automatically be genrated by plugin my concatenating YOUR_MOUDULE_NAME + "Controller" string. 
+> Your Controller name will be automatically be genrated by plugin by concatenating YOUR_MOUDULE_NAME + "Controller" string. 
 
 ```
 Example: 
   
-  YOUR_MODULE_NAME : "login" 
-  Controller name generated: 'loginController'
+  If you YOUR_MODULE_NAME = "login" 
+  Then Controller name generated = "loginController"
 
 ```
 
 ## Support:
 
-I welcome suggesstion or improvements on this plugin. I encourage developers, code enthusiastist's to add functionalities or make this as a rich plugin with plethora of features by contributing the code.
+I welcome suggestions or improvements on this plugin. I encourage developers, code enthusiastist's to add functionalities or make this as a rich plugin with plethora of features by contributing the code. Fiddle with the code.Happy coding :)
 
 Raise a question on stackoverflow and mail me the link or raise a issue on github.
 
@@ -80,6 +80,7 @@ Visit: http://www.nirus.org
 
 https://github.com/DanWahlin
 
+Read the below blog to get a detailed understanding of Angular JS lazy loading.
 http://weblogs.asp.net/dwahlin/dynamically-loading-controllers-and-views-with-angularjs-and-requirejs
 
 The above blog inspired me to develop the library as a generic module which can be used with or without Require JS framework.
