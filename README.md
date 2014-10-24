@@ -5,6 +5,14 @@ ARI is a light weight Angular add-on plugin that is used in conjuction with Angu
 
 Angular ui-router Link : https://github.com/angular-ui/ui-router
 
+*Production Build:*
+
+- Minified: https://raw.githubusercontent.com/nirus/Angular-Route-Injector/master/dist/routeInjector.min.js
+
+- un-minified: https://raw.githubusercontent.com/nirus/Angular-Route-Injector/master/dist/routeInjector.js
+
+**Description:**
+
 It is a helper plugin that is designed to inject the controller scripts on-demand thus reducing the 
 memory foot prints caused due the prefetched Angular controller modules.
 
