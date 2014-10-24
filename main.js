@@ -1,0 +1,31 @@
+require.config({
+	paths:{
+		angular:"libraries/angular/angular.min",
+		bootstrap:"libraries/angular-bootstrap/ui-bootstrap.min",
+		domready:"libraries/requirejs/domready",
+		appConfig:"config",		
+		"angular-ui-router":"libraries/angular/angular-ui-router",
+		app:"engine/app",
+		environment:"engine/env",
+		routes:"engine/routes",
+		"ui-route-injector":"engine/routeInjector"
+	},
+	waitSecond:0,
+	shim:{
+		"angular":{
+			exports:"angular"
+		},
+		"bootstrap":{
+			deps:["angular"]
+		},		
+		"angular-ui-router":{
+				deps:["angular"]
+		},
+		"ui-route-injector":{
+		     deps:["angular"]
+		}		
+	},	
+	//Starts the application
+	deps:["environment"]
+	
+});

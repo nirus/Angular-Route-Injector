@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		
+		<title>{{$scope.appName}}</title>
+		
+		<!--Style -->
+		<link rel="stylesheet" href="view/stylesheet/bootstrap/bootstrap.min.css" />
+		<!--SASS Compiled stylesheet-->
+		<link rel="stylesheet" href="view/stylesheet/style.css" />
+		
+		<!--Main entry point-->
+		<script src="libraries/requirejs/require.js" data-main="main.js" type="text/javascript" charset="utf-8" async defer></script>
+		
+	</head>
+	<body ui-view class="container-fluid">	
+		<div class="row">
+			<div class="col-md-4"></div>
+				<div class=" col-md-4">
+					<p>
+							<h1>Boiler Plate</h1>
+							<i>Navigate to Login page</i>
+					</p>
+				</div>
+			<div class="col-xs-6 col-md-4"></div>
+			
+		</div>	
+		<hr>
+		<div class="row">
+			<div class="col-md-4">
+				<a  class="btn btn-default" href="#/login">Click Login Controller</a>
+			</div>			
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-12">
+				<i>Note: this is a boiler plate project to illustrate the working on Anguar-Route-Injector plugin</i>
+			</div>			
+		</div>	
+	</body>
+</html>
