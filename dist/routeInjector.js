@@ -1,17 +1,3 @@
-/*
-    Author:Nirus A.K.A Niranjan Kumar
-    Contact: nirus@live.in
-    
-    Plugin Name : Angular Route Injector
-    URL: https://github.com/nirus/Angular-Route-Injector
-
-    Please use it and distribute this plugin. This plugin is released under MIT 
-    license.
-
-    Inspired by - Dan Wahlin blog on Angular Lazy loading
-    https://github.com/DanWahlin
-*/
-
 (function(definition){           
     //Checkpoints for angular and require
     (window.angular == undefined) ? (function(){
@@ -27,7 +13,7 @@
                     /*scritTag.async = 'async';*/
                     document.head.appendChild(scriptTag);
                     callback(); //Execute after all the scripts are attached
-                }            
+                };            
         })() : (function(){
                 window.define(definition);
             })();  
@@ -93,11 +79,8 @@
                     }else if((window.requirejs == undefined) && (window.angular.$ControlInjector == undefined)){
                        throw new Error(" $routeInjectorProvider - setHandler : Set the control handler API: $routeInjectorProvider.setHandler('undefined')");                                                            
                        return null;
-                    }else{
-                        if(!obj){
-                            obj = new Object();                                                                           
-                        }
-                    }
+                    }                    
+                    obj = !obj ? new Object(): obj;
                     var routeDef = {};
                     routeDef.url = (((obj.url != undefined) && (obj.url != null)) ? obj.url : '/'+baseName).replace('//','/');
                     routeDef.templateUrl = (config.getViewsDirectory() + '/' + ((obj.templateUrl != undefined) && (obj.templateUrl != null) ? obj.templateUrl : '') + baseName + '.html').replace("//","/");
@@ -108,21 +91,22 @@
                             var dependencies = [(config.getControllersDirectory() + '/'  + ((obj.controllerPath != undefined) && (obj.controllerPath != null) ? obj.controllerPath : '') +"/" + baseName + '.js').replace("//","/")];
                             return resolveDependencies($q, $rootScope, dependencies);
                         }
-                    };                       
+                    };                                          
                    if((((Object.getOwnPropertyNames != undefined) && (obj.resolve != undefined) && (obj.resolve != null)) ? Object.getOwnPropertyNames(obj.resolve).length != 0 : (function(){for(var key in obj.resolve) break; return (key != null) && (key != undefined);})()) && (obj.resolve != undefined)){
                        for (var key in obj.resolve){                           
                             routeDef.resolve[key] = obj.resolve[key];      
                        }
                    }
+                   
                     return routeDef;
                 },
 
             resolveDependencies = function ($q, $rootScope, dependencies) {
                 var defer = $q.defer();
-                require(dependencies, function () {
+                require(dependencies, function () {                    
                     defer.resolve();
                     if(!$rootScope.$$phase) {
-                        $rootScope.$apply();
+                        $rootScope.$apply();                        
                     }
                     
                 });
